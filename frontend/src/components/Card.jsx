@@ -3,12 +3,12 @@ function Card({ title, description }) {
     <div
       style={{
         border: "1px solid #ddd",
-        borderRadius: "10px",
+        borderRadius: "12px",
         padding: "20px",
+        background: "#fff",
       }}
     >
       <h2>{title}</h2>
-
       <p>{description}</p>
     </div>
   );

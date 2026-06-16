@@ -10,8 +10,15 @@ function Home() {
 
       <Hero />
 
-      {/* Stats Section */}
-      <section className="max-w-5xl mx-auto py-12 px-6">
+      <section
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))",
+    gap: "20px",
+    padding: "40px",
+    textAlign: "center",
+  }}
+>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
             <h3 className="text-3xl font-bold">10K+</h3>

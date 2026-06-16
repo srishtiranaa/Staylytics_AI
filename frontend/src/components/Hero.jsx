@@ -1,32 +1,79 @@
 function Hero() {
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-purple-50 py-24 px-6 text-center">
-      <div className="max-w-4xl mx-auto">
-        <span className="px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm">
-          AI Powered Hospitality Analytics
-        </span>
+    <section
+      style={{
+        textAlign: "center",
+        padding: "80px 20px",
+        background: "linear-gradient(135deg, #f5f7ff, #eef2ff)",
+      }}
+    >
+      <p
+        style={{
+          color: "#6366f1",
+          fontWeight: "600",
+          marginBottom: "15px",
+          fontSize: "0.95rem",
+        }}
+      >
+        AI Powered Hospitality Analytics
+      </p>
 
-        <h1 className="text-5xl md:text-7xl font-bold mt-6">
-          Transform Guest Reviews Into
-          <span className="block text-blue-600">
-            AI-Powered Business Growth
-          </span>
-        </h1>
+      <h1
+        style={{
+          fontSize: "2.5rem",
+          fontWeight: "700",
+          lineHeight: "1.2",
+          marginBottom: "20px",
+          maxWidth: "900px",
+          margin: "0 auto 20px",
+        }}
+      >
+        Transform Guest Reviews Into
+        <br />
+        AI-Powered Business Growth
+      </h1>
 
-        <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-          Analyze feedback, discover trends, and improve guest experiences
-          using AI-driven insights.
-        </p>
+      <p
+        style={{
+          fontSize: "1.1rem",
+          color: "#555",
+          maxWidth: "700px",
+          margin: "0 auto 30px",
+          lineHeight: "1.6",
+        }}
+      >
+        Analyze feedback, discover trends, and improve guest experiences
+        using AI-powered insights and intelligent review analytics.
+      </p>
 
-        <div className="mt-8 flex justify-center gap-4 flex-wrap">
-          <button className="px-6 py-3 rounded-xl bg-black text-white">
-            Get Started
-          </button>
+      <div>
+        <button
+          style={{
+            padding: "12px 24px",
+            marginRight: "12px",
+            border: "none",
+            borderRadius: "8px",
+            backgroundColor: "#4f46e5",
+            color: "white",
+            cursor: "pointer",
+            fontWeight: "600",
+          }}
+        >
+          Get Started
+        </button>
 
-          <button className="px-6 py-3 rounded-xl border">
-            Learn More
-          </button>
-        </div>
+        <button
+          style={{
+            padding: "12px 24px",
+            border: "1px solid #d1d5db",
+            borderRadius: "8px",
+            backgroundColor: "white",
+            cursor: "pointer",
+            fontWeight: "600",
+          }}
+        >
+          Learn More
+        </button>
       </div>
     </section>
   );
