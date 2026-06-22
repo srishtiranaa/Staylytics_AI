@@ -1,0 +1,9 @@
+.st-trendchart {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .st-trendchart { height: 140px; }
+}

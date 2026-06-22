@@ -1,0 +1,48 @@
+.analytics-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  font-family: var(--font-serif);
+}
+
+.analytics-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.analytics-trend__axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  margin-top: 6px;
+}
+
+.analytics-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.analytics-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1024px) {
+  .analytics-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .analytics-bottom {
+    grid-template-columns: 1fr;
+  }
+}

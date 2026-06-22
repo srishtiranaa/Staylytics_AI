@@ -1,0 +1,23 @@
+.st-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.st-badge--positive {
+  background: var(--color-positive-bg);
+  color: var(--color-positive);
+}
+
+.st-badge--negative {
+  background: var(--color-negative-bg);
+  color: var(--color-negative);
+}
+
+.st-badge--neutral {
+  background: var(--color-neutral-bg);
+  color: var(--color-neutral);
+}

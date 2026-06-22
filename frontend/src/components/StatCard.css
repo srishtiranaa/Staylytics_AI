@@ -1,0 +1,30 @@
+.st-statcard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.st-statcard__label {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.st-statcard__value {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font-serif);
+  color: var(--color-text-primary);
+}
+
+.st-statcard__trend {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.st-statcard__trend--up { color: var(--color-positive); }
+.st-statcard__trend--down { color: var(--color-negative); }

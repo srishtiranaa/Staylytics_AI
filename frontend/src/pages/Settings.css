@@ -1,0 +1,37 @@
+.settings-section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  font-family: var(--font-serif);
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.settings-form-grid > *:first-child {
+  grid-column: 1 / -1;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settings-danger-text {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0 0 16px;
+}
+
+@media (max-width: 640px) {
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .settings-form-grid > *:first-child {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,77 @@
+.st-table-wrap {
+  overflow-x: auto;
+}
+
+.st-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.st-table thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.st-table tbody td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.st-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.st-table__snippet {
+  color: var(--color-text-secondary);
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.st-table td + td,
+.st-table th + th {
+  padding-left: 20px;
+}
+
+/* Mobile: convert table rows to stacked cards */
+@media (max-width: 640px) {
+  .st-table thead { display: none; }
+
+  .st-table, .st-table tbody, .st-table tr, .st-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .st-table tr {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .st-table td {
+    padding: 4px 0;
+    border-bottom: none;
+  }
+
+  .st-table td::before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 90px;
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+  }
+
+  .st-table__snippet {
+    max-width: none;
+    white-space: normal;
+  }
+}

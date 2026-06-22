@@ -1,17 +1,9 @@
-function Card({ title, description }) {
-  return (
-    <div
-      style={{
-        border: "1px solid #ddd",
-        borderRadius: "12px",
-        padding: "20px",
-        background: "#fff",
-      }}
-    >
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  );
-}
+import './Card.css'
 
-export default Card;
+export default function Card({ children, className = '', padded = true }) {
+  return (
+    <div className={`st-card ${padded ? 'st-card--padded' : ''} ${className}`}>
+      {children}
+    </div>
+  )
+}
