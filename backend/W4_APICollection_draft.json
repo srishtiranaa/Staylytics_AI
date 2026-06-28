@@ -1,0 +1,93 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Staylytics AI - Week 4 API",
+  "dateExported": "2026-06-28T00:00:00.000Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "name": "1. GET all reviews",
+      "url": "http://localhost:5000/api/reviews",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "200" }
+      ]
+    },
+    {
+      "name": "2. GET single review by id",
+      "url": "http://localhost:5000/api/reviews/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "200" }
+      ]
+    },
+    {
+      "name": "3. GET search reviews",
+      "url": "http://localhost:5000/api/reviews/search?q=wifi",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "200" }
+      ]
+    },
+    {
+      "name": "4. POST create review",
+      "url": "http://localhost:5000/api/reviews",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"guestName\": \"Test Guest\",\n  \"text\": \"Great stay, would come back again\",\n  \"sentiment\": \"positive\"\n}"
+      },
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "201" }
+      ]
+    },
+    {
+      "name": "5. PUT update review",
+      "url": "http://localhost:5000/api/reviews/1",
+      "method": "PUT",
+      "sortNum": 50000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"sentiment\": \"neutral\"\n}"
+      },
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "200" }
+      ]
+    },
+    {
+      "name": "6. DELETE review",
+      "url": "http://localhost:5000/api/reviews/4",
+      "method": "DELETE",
+      "sortNum": 60000,
+      "created": "2026-06-28T00:00:00.000Z",
+      "modified": "2026-06-28T00:00:00.000Z",
+      "headers": [],
+      "tests": [
+        { "type": "res-code", "custom": "", "action": "equal", "value": "204" }
+      ]
+    }
+  ]
+}

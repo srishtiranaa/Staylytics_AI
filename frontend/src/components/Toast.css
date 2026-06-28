@@ -1,0 +1,29 @@
+.st-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.st-toast--error {
+  background: var(--color-negative-bg);
+  color: var(--color-negative);
+}
+
+.st-toast--success {
+  background: var(--color-positive-bg);
+  color: var(--color-positive);
+}
+
+@media (max-width: 640px) {
+  .st-toast {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
